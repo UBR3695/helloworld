@@ -9,7 +9,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        build(quietPeriod: 1, job: 'maven')
+        sh 'git --version'
       }
     }
 
